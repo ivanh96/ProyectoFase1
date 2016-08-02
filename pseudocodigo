@@ -13,3 +13,6 @@ si no hay ()
 buscar en x + 1
 si no hay ()
 buscar en y-1
+
+
+Las paredes son identificadas con '-' 
