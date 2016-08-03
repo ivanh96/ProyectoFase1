@@ -21,7 +21,6 @@ public class Laberinto {
 	public void leerText(String texto)
 	{
 		 // Leer una linea a la vez 
-		filcol = new int[2];
         String line = null;
         int largo = 0;
         int cont=0;
@@ -34,6 +33,7 @@ public class Laberinto {
             //Ciclo para llenar la matriz leyendo linea por linea
             while((line = bufferedReader.readLine()) != null) 
             {
+            	System.out.println(line);
             	for (int i=0;i<line.length();i++){
             		arreglo[cont][i]=line.charAt(i);
             	}
@@ -41,8 +41,6 @@ public class Laberinto {
             }   
             
             // Cerrar el archivo
-            filcol[0]=cont;
-            filcol[1]=largo;
             bufferedReader.close(); 
         }
         //Si no logra abrir el archivo mandar un mensaje 
@@ -69,7 +67,6 @@ public class Laberinto {
 				if (band==false) busca(x-1,y);
 				if (band==false) busca(x+1,y);
 				if (band==false) busca(x,y-1);
-				
 			}
 		}
 	}

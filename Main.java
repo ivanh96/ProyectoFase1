@@ -5,7 +5,7 @@ public class Main {
 		// TODO Auto-generated method stub
 		Laberinto lab = new Laberinto(); 
 		lab.leerText("Laberinto.txt");
-		lab.busca(2, 2);
+		//lab.busca(2, 2);
 	}
 
 }
